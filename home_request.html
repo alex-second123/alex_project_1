@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body style="background-color: #20BDEB;">
+
+
+<ul>
+  <li><a href="all_equip.html">Equipment</a></li>
+  <li><a href="home_request.html">Update Reservation</a></li>
+  <li><a href="cal.html">Calendar</a></li>
+  <li style="float:right"><a class="active" href="#auth">Log In</a></li>
+
+</ul>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: powderblue;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    margin:50px 0; 
+    padding:0;
+    text-align:center;
+}
+
+
+</style>
+
+
+
+<form method="post" rel="create"> 
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="name">Onyen</label>
+                <input id="name" type="text" placeholder="Onyen" required><br>
+            </div>
+
+            <legend> Edit an Existing Reservation Request </legend>
+
+            <label for="Reservation ID">Previous Reservation ID</label>
+            <input id="Reservation ID" type="input" placeholder="Reservation ID" required><br>
+    
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required=""><br>
+    
+            <label for="PID">PID</label>
+            <input id="PID" type="PID" placeholder="PID" required><br>
+    
+
+
+            <label for="Equipment">Equipment Choice</label>
+            <select id="Equipment" required="">
+                <option>Select One</option>
+                <option>Canon M400</option>
+                <option>Panasonic HMC-40</option>
+                <option>Zoom H4 Digital Recorder</option>
+                <option>Zoom H1 Digital Recorder</option>
+                <option>Sennheiser Shotgun Mic</option>
+                <option>Lowel DV Creator Light Kit</option>
+                <option>Greenscreen</option>
+                <option>Bluescreen</option>
+            </select>
+
+            
+            <label for="date_start"></label>
+
+                <head>
+
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <title>jQuery UI Datepicker - Default functionality</title>
+                  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                  <link rel="stylesheet" href="/resources/demos/style.css">
+                  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                  <script>
+                  $( function() {
+                    $( "#datepicker" ).datepicker();
+                  } );
+                  </script>
+                </head>
+                <body>
+                 
+                <p>Start Date: <input type="text" id="datepicker"></p>
+                 
+                 
+                </body>
+                
+            <label for="date_end"></label>
+
+                <head>
+
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <title>jQuery UI Datepicker - Default functionality</title>
+                  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                  <link rel="stylesheet" href="/resources/demos/style.css">
+                  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                  <script>
+                  $( function() {
+                    $( "#datepicker" ).datepicker();
+                  } );
+                  </script>
+                </head>
+                <body>
+                 
+                <p>End Date: <input type="text" id="datepicker"></p>
+                 
+                 
+                </body>
+    
+            <br><button type="submit" class="pure-button pure-button-primary">Submit Request</button>
+        </fieldset>
+    </form>
